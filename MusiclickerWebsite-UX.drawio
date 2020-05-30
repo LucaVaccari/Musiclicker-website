@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-05-30T12:13:57.065Z" agent="5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="ivirawFMCs9MRQGyyXbQ" version="13.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-05-30T12:39:51.775Z" agent="5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="v83HwU4nbxY3jXFprM3u" version="13.1.8" type="github">
   <diagram id="94KaeeBLNRtayk1IoTet" name="Page-1">
     <mxGraphModel dx="780" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="1">
       <root>
@@ -70,11 +70,20 @@
         <mxCell id="A7HbBt3oseMl4bGx0iYn-6" value="Programming" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="233" y="450" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-7" target="A7HbBt3oseMl4bGx0iYn-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="A7HbBt3oseMl4bGx0iYn-7" value="Graphics" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="368" y="450" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-8" target="A7HbBt3oseMl4bGx0iYn-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="A7HbBt3oseMl4bGx0iYn-8" value="Sound" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-9" target="A7HbBt3oseMl4bGx0iYn-40">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="A7HbBt3oseMl4bGx0iYn-9" value="What people think" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="450" width="120" height="60" as="geometry" />
@@ -85,20 +94,62 @@
         <mxCell id="A7HbBt3oseMl4bGx0iYn-12" value="Trailer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="368" y="240" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="A7HbBt3oseMl4bGx0iYn-23" value="Explanation of the game design and interactive graph" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="520" width="120" height="80" as="geometry" />
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-31" target="A7HbBt3oseMl4bGx0iYn-32">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A7HbBt3oseMl4bGx0iYn-24" value="Explanation of the BigNumber class and BigNumber generator from base and exp" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-          <mxGeometry x="233" y="520" width="120" height="80" as="geometry" />
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-31" value="Title and design description" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="530" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="A7HbBt3oseMl4bGx0iYn-25" value="3D rendering of some models" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-          <mxGeometry x="368" y="520" width="120" height="80" as="geometry" />
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-32" target="A7HbBt3oseMl4bGx0iYn-34">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="A7HbBt3oseMl4bGx0iYn-26" value="Explanation of the sound creation and implementation and sound playback" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-          <mxGeometry x="500" y="520" width="120" height="80" as="geometry" />
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-32" value="Mathematical formulas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="600" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="A7HbBt3oseMl4bGx0iYn-27" value="Some Instagram posts with comments" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-          <mxGeometry x="630" y="520" width="120" height="80" as="geometry" />
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-34" value="Graphs" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95" y="670" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-37" target="A7HbBt3oseMl4bGx0iYn-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-37" value="Title and description" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="233" y="530" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-41" target="A7HbBt3oseMl4bGx0iYn-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-41" value="Interactive BigNumber generator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="233" y="600" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-43" value="[Not sure] Interactive BigNumber calculator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="233" y="670" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-38" target="A7HbBt3oseMl4bGx0iYn-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-38" value="Title and description" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="373" y="530" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-45" value="Showcase of the best models" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="373" y="600" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-39" target="A7HbBt3oseMl4bGx0iYn-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-39" value="Title and description: explanation of sound creation and implementation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="530" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-47" value="Some instruments and sound effects for playback" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="630" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A7HbBt3oseMl4bGx0iYn-40" target="A7HbBt3oseMl4bGx0iYn-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-40" value="Title and description" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="635" y="535" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="A7HbBt3oseMl4bGx0iYn-49" value="Instagram posts with comments" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="635" y="610" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

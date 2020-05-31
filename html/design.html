@@ -25,30 +25,84 @@
 			<h1 class="display-4">The design of Music!icker</h1>
 			<p class="lead">The game and its formulas</p>
 			<hr class="my-4" />
-			<p></p>
+			<p>
+				After two years of learning and making incomplete projects, I
+				decided to take a step forward and make a full game. To keep it
+				simple, I decided to make it for Android phones, even if I don't
+				play games on mobile. <br />
+				The game is an idle game, that is a game where the player has a
+				currency that has to be gained manually by doing things like
+				touching the screen or clicking and over time that currency can
+				be used to purchase some kind of auto-clicker that get currency
+				for you. It's an endless loop that goes on until the player gets
+				bored, but I decided to add an objective: reaching level 60 for
+				a surprising game ending.
+				<br />
+				The currency consists of musical notes and you gain them by
+				dragging a mixer slider over the screen. Each time it passes
+				through the middle it makes the singer sing and gain some notes
+				depending on the singer level. You can buy musician that add
+				notes each second based on their levels. With notes you can
+				level up the singer and the musicians.
+			</p>
+		</div>
+
+		<!-- Graphs -->
+		<div class="jumbotron">
+			<p>
+				The game needed some mathematical formulas to decide how many
+				notes to give to the player and how many notes to ask for.
+				Balancing them has been a difficult task, with hours spent in
+				playing the game and deciding where to give more or less, where
+				to multiply by 1.15, where to increase the exponent and so on.
+				Here are the final results. <br />
+				<i>
+					In the graphs the y axis represent the number of notes and
+					the x axis the time or the number of slides.
+				</i>
+			</p>
+			<p>
+				The first two formulas set the number of notes produced by each
+				slide and the number of notes required for leveling up the
+				singer. The difference has to be quite big, since I didn't want
+				the player to reach level 60 without first unlocking all other
+				instruments.
+			</p>
+			<p>NotesPerSlide(Level) = .... ....</p>
+			<p>NotesForLevelUp(Level) = .... ....</p>
+			<canvas id="singer-graph" class="m-auto s-auto"></canvas>
+			<p>
+				The next two formulas are a little bit more complicated than the
+				first two, since there are 24 musicians and I decided to add a
+				parameter, the musician grade, with goes from 1 to 24 and
+				represent each musician.
+			</p>
+			<p>NotesPerSecond(Level) = ...</p>
+			<p>NotesForLevelUp(Level) = ...</p>
+			<canvas id="musician-graph" class="m-auto s-auto"></canvas>
 		</div>
 
 		<!-- Footer -->
 		<footer class="page-footer text-center py-5 bg-black">
 			<p class="text-white">Digital Studios - 2020</p>
 			<div class="link-white">
-				<img class="logo" src="img/YouTube-icon.png" />
+				<img class="logo" src="/img/YouTube-icon.png" />
 				<a
 					href="https://www.youtube.com/channel/UC0M7H-5uuFMcI6QN6NxkCLA"
 					target="_blank"
 					>YouTube</a
 				>
-				<img class="logo" src="img/Instagram-icon.png" />
+				<img class="logo" src="/img/Instagram-icon.png" />
 				<a
 					href="https://www.instagram.com/d.i.g.i.tal_studios/"
 					target="_blank"
 					>Instagram</a
 				>
-				<img class="logo" src="img/Twitter-icon.png" />
+				<img class="logo" src="/img/Twitter-icon.png" />
 				<a href="https://twitter.com/DigitalStudios8" target="_blank"
 					>Twitter</a
 				>
-				<img class="logo" src="img/Reddit-icon.png" />
+				<img class="logo" src="/img/Reddit-icon.png" />
 				<a
 					href="https://www.reddit.com/user/Digital_Studios"
 					target="_blank"
@@ -74,5 +128,10 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- chart.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+
+		<script src="/js/design.js"></script>
 	</body>
 </html>

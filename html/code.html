@@ -25,30 +25,59 @@
 			<h1 class="display-4">The coding of Musci!icker</h1>
 			<p class="lead">Big numbers in the game</p>
 			<hr class="my-4" />
-			<p></p>
+			<p>
+				As seen in the <a href="/html/design.html">design part</a>, the
+				number of notes grows exponentially. A simple computer with at
+				most 64 bit can't handle a number like 10^50. To fix this
+				problem I created a custom class that stores the base number and
+				the exponent of the power with base 10. That is number = baseNum
+				* 10 ^ exponent. <br />
+				The base number can only reach 999 and then it gets reduced and
+				the exponent increased. I then created an array of suffixes
+				(like "K", "M", "G", "T", ecc) to put at the end of the number
+				to create a human readable string.
+				<br />
+				You can test it here if you want!
+			</p>
+			<form>
+				<div class="form-group row">
+					<div class="col-sm">
+						<label>Base number</label>
+						<input id="base-num" type="number" class="form-control" placeholder="0">
+					</div>
+					<div class="col-sm">
+						<label>Exponent</label>
+						<input id="exp" type="number" class="form-control" placeholder="1">
+					</div>
+				</div>
+				<div class="row">
+					<p id="big-number-text" class="col-sm">NUM</p>
+					<button type="button" id="big-number-btn" class="col-sm btn btn-primary">Calculate</button>
+				</div>
+			</form>
 		</div>
 
 		<!-- Footer -->
 		<footer class="page-footer text-center py-5 bg-black">
 			<p class="text-white">Digital Studios - 2020</p>
 			<div class="link-white">
-				<img class="logo" src="img/YouTube-icon.png" />
+				<img class="logo" src="/img/YouTube-icon.png" />
 				<a
 					href="https://www.youtube.com/channel/UC0M7H-5uuFMcI6QN6NxkCLA"
 					target="_blank"
 					>YouTube</a
 				>
-				<img class="logo" src="img/Instagram-icon.png" />
+				<img class="logo" src="/img/Instagram-icon.png" />
 				<a
 					href="https://www.instagram.com/d.i.g.i.tal_studios/"
 					target="_blank"
 					>Instagram</a
 				>
-				<img class="logo" src="img/Twitter-icon.png" />
+				<img class="logo" src="/img/Twitter-icon.png" />
 				<a href="https://twitter.com/DigitalStudios8" target="_blank"
 					>Twitter</a
 				>
-				<img class="logo" src="img/Reddit-icon.png" />
+				<img class="logo" src="/img/Reddit-icon.png" />
 				<a
 					href="https://www.reddit.com/user/Digital_Studios"
 					target="_blank"
@@ -74,5 +103,7 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"
 		></script>
+
+		<script src="../js/code.js"></script>
 	</body>
 </html>

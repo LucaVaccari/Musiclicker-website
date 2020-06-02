@@ -1,4 +1,4 @@
-const suffixes = ["", "K", "M", "G", "T"];
+const suffixes = ["", "K", "M", "G", "T", "P", "E", "Z", "Y", "aa", "bb", "cc"];
 
 class BigNumber {
 	constructor(base = 0, exp = 1) {
@@ -16,12 +16,18 @@ class BigNumber {
 			this.exp += 3;
 		}
 	}
-	toString() {}
+	toString() {
+		this.reduce();
+		if(suffixes[this.exp == 0 ? 0 : (this.exp + 2) / 3] == undefined)
+			return "inf";
+		
+		return this.base + suffixes[this.exp == 0 ? 0 : (this.exp + 2) / 3]; //add suffix
+	}
 }
 
 $(function() {
 	$("#big-number-btn").click(() => {
 		let n = new BigNumber($("#base-num").val() * 1, $("#exp").val() * 1);
-		console.log(n);
+		console.log(n.toString());
 	});
 });

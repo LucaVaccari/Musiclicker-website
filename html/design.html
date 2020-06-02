@@ -68,8 +68,8 @@
 				the player to reach level 60 without first unlocking all other
 				instruments.
 			</p>
-			<p>NotesPerSlide(Level) = .... ....</p>
-			<p>NotesForLevelUp(Level) = .... ....</p>
+			<p>NotesPerSlide(Level) = (3.63 / 1.334) ^ Level</p>
+			<p>NotesForLevelUp(Level) = (9.72 / 2.5) ^ (Level + 1)</p>
 			<canvas id="singer-graph" class="m-auto s-auto"></canvas>
 			<p>
 				The next two formulas are a little bit more complicated than the
@@ -77,8 +77,8 @@
 				parameter, the musician grade, with goes from 1 to 24 and
 				represent each musician.
 			</p>
-			<p>NotesPerSecond(Level) = ...</p>
-			<p>NotesForLevelUp(Level) = ...</p>
+			<p>NotesPerSecond(Level) = ((grade * 1.421 + 1.56 / 2.1) ^ (Level - 1) * 10.4</p>
+			<p>NotesForLevelUp(Level) = (grade + 1.075) * Level * 10.2</p>
 			<canvas id="musician-graph" class="m-auto s-auto"></canvas>
 		</div>
 

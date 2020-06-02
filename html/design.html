@@ -15,7 +15,8 @@
 			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="/css/global.css" />
+		<link rel="stylesheet" href="../css/global.css" />
+		<link rel="stylesheet" href="../css/design.css" />
 
 		<title>Musiclicker - Design</title>
 	</head>
@@ -70,7 +71,7 @@
 			</p>
 			<p>NotesPerSlide(Level) = (3.63 / 1.334) ^ Level</p>
 			<p>NotesForLevelUp(Level) = (9.72 / 2.5) ^ (Level + 1)</p>
-			<canvas id="singer-graph" class="m-auto s-auto"></canvas>
+			<canvas id="singer-graph" class=""></canvas>
 			<p>
 				The next two formulas are a little bit more complicated than the
 				first two, since there are 24 musicians and I decided to add a
@@ -79,30 +80,36 @@
 			</p>
 			<p>NotesPerSecond(Level) = ((grade * 1.421 + 1.56 / 2.1) ^ (Level - 1) * 10.4</p>
 			<p>NotesForLevelUp(Level) = (grade + 1.075) * Level * 10.2</p>
-			<canvas id="musician-graph" class="m-auto s-auto"></canvas>
+			<div class="slider-container">
+				<input type="range" min="1" max="24" value="1" class="slider" id="grade-slider">
+				<p id="slider-value">Musician grade: </p>
+			</div>
+			<div id="musician-graph-container">
+				<canvas id="musician-graph" ></canvas>
+			</div>
 		</div>
 
 		<!-- Footer -->
 		<footer class="page-footer text-center py-5 bg-black">
 			<p class="text-white">Digital Studios - 2020</p>
 			<div class="link-white">
-				<img class="logo" src="/img/YouTube-icon.png" />
+				<img class="logo" src="../resources/img/YouTube-icon.png" />
 				<a
 					href="https://www.youtube.com/channel/UC0M7H-5uuFMcI6QN6NxkCLA"
 					target="_blank"
 					>YouTube</a
 				>
-				<img class="logo" src="/img/Instagram-icon.png" />
+				<img class="logo" src="../resources/img/Instagram-icon.png" />
 				<a
 					href="https://www.instagram.com/d.i.g.i.tal_studios/"
 					target="_blank"
 					>Instagram</a
 				>
-				<img class="logo" src="/img/Twitter-icon.png" />
+				<img class="logo" src="../resources/img/Twitter-icon.png" />
 				<a href="https://twitter.com/DigitalStudios8" target="_blank"
 					>Twitter</a
 				>
-				<img class="logo" src="/img/Reddit-icon.png" />
+				<img class="logo" src="../resources/img/Reddit-icon.png" />
 				<a
 					href="https://www.reddit.com/user/Digital_Studios"
 					target="_blank"
@@ -132,6 +139,6 @@
 		<!-- chart.js -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
 
-		<script src="/js/design.js"></script>
+		<script src="../js/design.js"></script>
 	</body>
 </html>

@@ -23,7 +23,7 @@ body {
 	color: #ecf0f1;
 }
 .logo {
-    width: 3.5%;
-    height: 3.5%;
+    width: 2em;
+    height: auto;
     padding-left: 10px;
 }

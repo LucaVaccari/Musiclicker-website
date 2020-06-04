@@ -20,19 +20,18 @@ async function loadData() {
 
 	for (let i = 0; i < 20; i++) {
 		if (i >= comments.length) break;
-		commentLabels.push(
-			DOM.parseImg(
-				comments[i].authorProfileImageUrl,
-				"profile picture",
-				["padding-10"],
-			) +
-				comments[i].authorDisplayName +
-				" => " +
-				comments[i].textDisplay,
-		);
-    }
-    
-    commentDomContainer.innerHTML = DOM.parseUnLi(commentLabels);
+		commentLabels.push([
+			DOM.parseImg(comments[i].authorProfileImageUrl, "profile picture", [
+				"padding-10",
+			]),
+			comments[i].authorDisplayName,
+			comments[i].textDisplay,
+			comments[i].likeCount + " likes",
+		]);
+	}
+	commentDomContainer.innerHTML = DOM.parseSimpleTable(commentLabels, [
+		"padding-10",
+	]);
 }
 
 loadData();

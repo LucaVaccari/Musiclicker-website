@@ -5,4 +5,6 @@ The official website of the music themed idle Android game.
  * [Bootstrap](https://getbootstrap.com/)
  * [Char.js](https://www.chartjs.org/)
  * [Three.js](https://threejs.org/)
- * [Instagram API](https://www.instagram.com/developer/)
+ * [YouTube API](https://developers.google.com/youtube/v3)
+ 
+ [Game trailer](https://youtu.be/zpK1YXbbCbA)

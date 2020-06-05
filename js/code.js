@@ -30,8 +30,9 @@ const suffixes = [
 class BigNumber {
 	constructor(base = 0, exp = 1) {
 		this.base = base;
-		this.exp = exp;
+		this.exp = exp; //exp of 10, multiplier of base
 
+		//make the exponent divisible by 3
 		while (this.exp % 3 != 0) {
 			this.exp++;
 			this.base /= 10;
@@ -49,7 +50,7 @@ class BigNumber {
 			suffixes[parseInt(this.exp == 0 ? 0 : (this.exp + 2) / 3)] ==
 			undefined
 		) {
-			return "inf";
+			return "inf"; //if the number is too big it returns inf
 		}
 
 		return (
@@ -60,8 +61,10 @@ class BigNumber {
 }
 
 $(function() {
-	$("#big-number-btn").click(() => {
+	const printParsedNum = () => {
 		let n = new BigNumber($("#base-num").val() * 1, $("#exp").val() * 1);
 		$("#big-number-text").text(n.toString());
-	});
+	};
+	$("#base-num").change(printParsedNum);
+	$("#exp").change(printParsedNum);
 });

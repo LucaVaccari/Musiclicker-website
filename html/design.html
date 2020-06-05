@@ -27,10 +27,6 @@
 			<p class="lead">The game and its formulas</p>
 			<hr class="my-4" />
 			<p>
-				After two years of learning and making incomplete projects, I
-				decided to take a step forward and make a full game. To keep it
-				simple, I decided to make it for Android phones, even if I don't
-				play games on mobile. <br />
 				The game is an idle game, that is a game where the player has a
 				currency that has to be gained manually by doing things like
 				touching the screen or clicking and over time that currency can
@@ -78,14 +74,24 @@
 				parameter, the musician grade, with goes from 1 to 24 and
 				represent each musician.
 			</p>
-			<p>NotesPerSecond(Level) = ((grade * 1.421 + 1.56 / 2.1) ^ (Level - 1) * 10.4</p>
+			<p>
+				NotesPerSecond(Level) = ((grade * 1.421 + 1.56 / 2.1) ^ (Level -
+				1) * 10.4
+			</p>
 			<p>NotesForLevelUp(Level) = (grade + 1.075) * Level * 10.2</p>
 			<div class="slider-container">
-				<input type="range" min="1" max="24" value="1" class="slider" id="grade-slider">
-				<p id="slider-value">Musician grade: </p>
+				<input
+					type="range"
+					min="1"
+					max="24"
+					value="1"
+					class="slider"
+					id="grade-slider"
+				/>
+				<p id="slider-value">Musician grade:</p>
 			</div>
 			<div id="musician-graph-container">
-				<canvas id="musician-graph" ></canvas>
+				<canvas id="musician-graph"></canvas>
 			</div>
 		</div>
 

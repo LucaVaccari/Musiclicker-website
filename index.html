@@ -15,8 +15,8 @@
 			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 			crossorigin="anonymous"
 		/>
-        <link rel="stylesheet" href="css/global.css" />
-        <link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/index.css" />
 
 		<title>Musiclicker website</title>
 	</head>
@@ -29,101 +29,171 @@
 			<p>
 				Music!icker is an Android game developed completely by a 16 year
 				old guy with
-				<a href="https://unity.com/" target="_blank"
-					>Unity game engine</a
+				<a href="https://unity.com/" target="_blank">
+					Unity game engine </a
 				>. In the game you are a singer that gain notes as he sings.
 				With the notes he can level up, gaining more notes. He can also
 				hire musicians to play with him and produce even more notes.
 				When he reaches the level 60, he'll be able to fight the bad
-				music in the final battle.
+				music in the final battle. <br />
+				After two years of learning and making incomplete projects, I
+				decided to take a step forward and make a full game. To keep it
+				simple, I decided to make it for Android phones, even if I don't
+				play games on mobile. <br />
+				This page shows some of the aspects of the creation of the game.
+				You'll see things about math, coding, 3d graphics, audio and
+				marketing.
 			</p>
 		</div>
 
 		<!-- Game trailer -->
 		<div id="trailer-video">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/zpK1YXbbCbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/zpK1YXbbCbA"
+				frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			>
+			</iframe>
 		</div>
 		<!-- The Author -->
 		<div class="jumbotron bg-grey">
 			<h3 class="display-4">The Author</h3>
 			<p>
-				Luca Vaccari is a young italian aspiring game developer and
-				Music!icker is his first released game. He study programming at
-				school and take classical guitar music lessons. He learned a lot
-				of things about game development by himself, reading books and
-				articles, watching videos, creating prototypes. Now he've
-				learned everything needed to complete a very simple mobile game.
+				I'm Luca Vaccari, a young italian aspiring game developer and
+				Music!icker is my first released game. I study programming at
+				school and take classical guitar music lessons. I learned a lot
+				of things about game development by myself, reading books and
+				articles, watching videos, creating prototypes. Now I've learned
+				everything needed to complete a very simple mobile game.
+				<br />
+				Here are my skills:
+				<canvas id="skills"></canvas>
 			</p>
 		</div>
 
 		<!-- Cards for sub-pages -->
-        <div class="container">
+		<div class="container">
+			<div class="row">
+				<!-- Design -->
+				<div class="card m-auto col-sm h-100 bg-yellow">
+					<img
+						class="card-img-top"
+						alt="img"
+						src="resources/img/DesignLogo.png"
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Design</h5>
+						<p class="card-text">
+							How mathematical formulas works in the game
+						</p>
+						<a href="html/design.html" class="btn btn-primary"
+							>Read</a
+						>
+					</div>
+				</div>
+				<!-- Code -->
+				<div class="card m-auto col-sm h-100 bg-yellow">
+					<img
+						class="card-img-top"
+						alt="img"
+						src="resources/img/CodeLogo.png"
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Code</h5>
+						<p class="card-text">
+							How the game handle's very big numbers
+						</p>
+						<a href="html/code.html" class="btn btn-primary"
+							>Read</a
+						>
+					</div>
+				</div>
+				<!-- Visuals -->
+				<div class="card m-auto col-sm bg-yellow">
+					<img
+						class="card-img-top"
+						alt="img"
+						src="resources/img/VisualsLogo.png"
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Visuals</h5>
+						<p class="card-text">
+							Exhibition of some 3D models from the game
+						</p>
+						<a href="html/visuals.html" class="btn btn-primary"
+							>Watch</a
+						>
+					</div>
+				</div>
+				<!-- Sound -->
+				<div class="card m-auto col-sm bg-yellow">
+					<img
+						class="card-img-top"
+						alt="img"
+						src="resources/img/AudioLogo.png"
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Sound</h5>
+						<p class="card-text">
+							How the Wwise audio engine handled the music
+						</p>
+						<a href="html/sounds.html" class="btn btn-primary"
+							>Listen</a
+						>
+					</div>
+				</div>
+				<!-- Social -->
+				<div class="card m-auto col-sm bg-yellow">
+					<img
+						class="card-img-top"
+						alt="img"
+						src="resources/img/SocialLogo.png"
+					/>
+					<div class="card-body">
+						<h5 class="card-title">Social</h5>
+						<p class="card-text">
+							Visit our social to keep contact with our games
+						</p>
+						<a href="html/social.html" class="btn btn-primary"
+							>Check</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
 
-            <div class="row">
-                <!-- Design -->
-                <div class="card m-auto col-sm h-100 bg-yellow">
-                    <img class="card-img-top" alt="img" src="resources/img/DesignLogo.png"/>
-				<div class="card-body">
-					<h5 class="card-title">Design</h5>
-					<p class="card-text">How mathematical formulas works in the game</p>
-					<a href="html/design.html" class="btn btn-primary">Read</a>
-				</div>
+		<!-- Footer -->
+		<footer class="page-footer text-center py-5 bg-black">
+			<p class="text-white">Digital Studios - 2020</p>
+			<div class="link-white">
+				<img class="logo" src="resources/img/YouTube-icon.png" />
+				<a
+					href="https://www.youtube.com/channel/UC0M7H-5uuFMcI6QN6NxkCLA"
+					target="_blank"
+					>YouTube</a
+				>
+				<img class="logo" src="resources/img/Instagram-icon.png" />
+				<a
+					href="https://www.instagram.com/d.i.g.i.tal_studios/"
+					target="_blank"
+					>Instagram</a
+				>
+				<img class="logo" src="resources/img/Twitter-icon.png" />
+				<a href="https://twitter.com/DigitalStudios8" target="_blank"
+					>Twitter</a
+				>
+				<img class="logo" src="resources/img/Reddit-icon.png" />
+				<a
+					href="https://www.reddit.com/user/Digital_Studios"
+					target="_blank"
+					>Reddit</a
+				>
 			</div>
-			<!-- Code -->
-			<div class="card m-auto col-sm h-100 bg-yellow">
-				<img class="card-img-top" alt="img" src="resources/img/CodeLogo.png"/>
-				<div class="card-body">
-					<h5 class="card-title">Code</h5>
-					<p class="card-text">How the game handle's very big numbers</p>
-					<a href="html/code.html" class="btn btn-primary">Read</a>
-				</div>
-			</div>
-			<!-- Visuals -->
-			<div class="card m-auto col-sm bg-yellow">
-				<img class="card-img-top" alt="img" src="resources/img/VisualsLogo.png"/>
-				<div class="card-body">
-					<h5 class="card-title">Visuals</h5>
-					<p class="card-text">Exhibition of some 3D models from the game</p>
-					<a href="html/visuals.html" class="btn btn-primary">Watch</a>
-				</div>
-			</div>
-			<!-- Sound -->
-			<div class="card m-auto col-sm bg-yellow">
-                <img class="card-img-top" alt="img" src="resources/img/AudioLogo.png"/>
-				<div class="card-body">
-                    <h5 class="card-title">Sound</h5>
-					<p class="card-text">
-                        How the Wwise audio engine handled the music
-                    </p>
-					<a href="html/sounds.html" class="btn btn-primary">Listen</a>
-				</div>
-			</div>
-			<!-- Social -->
-			<div class="card m-auto col-sm bg-yellow">
-                <img class="card-img-top" alt="img" src="resources/img/SocialLogo.png" />
-				<div class="card-body">
-                    <h5 class="card-title">Social</h5>
-					<p class="card-text">Visit our social to keep contact with our games</p>
-					<a href="html/social.html" class="btn btn-primary">Check</a>
-				</div>
-			</div>
-        </div>
+		</footer>
 
-        <!-- Footer -->
-        <footer class="page-footer text-center py-5 bg-black">
-            <p class="text-white">Digital Studios - 2020</p>
-            <div class="link-white">
-                <img class="logo" src="resources/img/YouTube-icon.png"> 
-                <a href="https://www.youtube.com/channel/UC0M7H-5uuFMcI6QN6NxkCLA" target="_blank">YouTube</a>
-                <img class="logo" src="resources/img/Instagram-icon.png"> 
-                <a href="https://www.instagram.com/d.i.g.i.tal_studios/" target="_blank">Instagram</a>
-                <img class="logo" src="resources/img/Twitter-icon.png"> 
-                <a href="https://twitter.com/DigitalStudios8" target="_blank">Twitter</a>
-                <img class="logo" src="resources/img/Reddit-icon.png"> 
-                <a href="https://www.reddit.com/user/Digital_Studios" target="_blank">Reddit</a>
-            </div>
-        </footer>
-        
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
@@ -142,6 +212,9 @@
 			crossorigin="anonymous"
 		></script>
 
-		<script src="js/global.js"></script>
+		<!-- Chart.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+
+		<script src="js/index.js"></script>
 	</body>
 </html>

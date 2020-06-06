@@ -4,7 +4,7 @@ import { OrbitControls } from "../js/three.js/examples/jsm/controls/OrbitControl
 
 $(function() {
 	init("Cello");
-	init("Organ");
+	init("Organ", { 0, -5, 0});
 	init("Piano");
 	init("Trumpet");
 	init("Synth");

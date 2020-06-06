@@ -10,7 +10,11 @@ $(function() {
 	init("Synth");
 });
 
-function init(instrument) {
+function init(instrument, position = {
+	x: 0,
+	y: 0,
+	z: 0,
+	}) {
 	let scene, camera, light, renderer;
 	scene = new THREE.Scene();
 	scene.background = new THREE.Color(0x2980b9);
@@ -41,9 +45,9 @@ function init(instrument) {
 	let loader = new GLTFLoader();
 	loader.load("../resources/3dModels/" + instrument + "Model.glb", function(gltf) {
 		gltf.scene.scale.set(.5, .5, .5);
-		gltf.scene.position.x = 0;
-		gltf.scene.position.y = 0;
-		gltf.scene.position.z = 0;
+		gltf.scene.position.x = position.x;
+		gltf.scene.position.y = position.y;
+		gltf.scene.position.z = position.z;
 		camera.position.set(0, 0, 10);
 		scene.add(gltf.scene);
 		animate();

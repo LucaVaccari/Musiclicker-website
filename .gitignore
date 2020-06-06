@@ -6,3 +6,5 @@ debug.log
 *.sqlite
 .vs/slnx.sqlite
 *.sqlite
+.vs/Musiclicker-website/v16/.suo
+.vs/VSWorkspaceState.json

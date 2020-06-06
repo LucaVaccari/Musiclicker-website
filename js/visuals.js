@@ -4,17 +4,13 @@ import { OrbitControls } from "../js/three.js/examples/jsm/controls/OrbitControl
 
 $(function() {
 	init("Cello");
-	init("Organ", { 0, -5, 0});
+	init("Organ");
 	init("Piano");
 	init("Trumpet");
 	init("Synth");
 });
 
-function init(instrument, position = {
-	x: 0,
-	y: 0,
-	z: 0,
-	}) {
+function init(instrument) {
 	let scene, camera, light, renderer;
 	scene = new THREE.Scene();
 	scene.background = new THREE.Color(0x2980b9);
@@ -45,9 +41,9 @@ function init(instrument, position = {
 	let loader = new GLTFLoader();
 	loader.load("../resources/3dModels/" + instrument + "Model.glb", function(gltf) {
 		gltf.scene.scale.set(.5, .5, .5);
-		gltf.scene.position.x = position.x;
-		gltf.scene.position.y = position.y;
-		gltf.scene.position.z = position.z;
+		gltf.scene.position.x = 0;
+		gltf.scene.position.y = 0
+		gltf.scene.position.z = 0;
 		camera.position.set(0, 0, 10);
 		scene.add(gltf.scene);
 		animate();

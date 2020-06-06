@@ -3,3 +3,7 @@
 .vscode/*
 .vs/*
 debug.log
+.vs\slnx.sqlite
+*.sqlite
+*.sqlite
+.vs/slnx.sqlite
